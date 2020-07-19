@@ -1,0 +1,107 @@
+.tf-1{
+    -fx-border-color: #311b92;
+    -fx-border-radius: 5;
+    -fx-background-color: #f3c0cb;
+    -fx-text-fill: #311b92;
+    -fx-prompt-text-fill: #311b92;
+}
+.pf-1{
+    -fx-border-color: #311b92;
+    -fx-border-radius: 5;
+    -fx-background-color: #f3c0cb;
+    -fx-text-fill: #311b92;
+    -fx-prompt-text-fill: #311b92;
+}
+.button_1{
+    -fx-background-color: #311b92;
+    -fx-text-fill: rgb(243, 198, 206);
+}
+.button_2{
+    -fx-background-color: transfarent;
+}
+.button_2:hover{
+    -fx-background-color: #76849A;
+}
+.button_2:focused{
+    -fx-background-color: #76849A;
+}
+
+.uvName{
+    /*-fx-border-color: rgb(155, 163, 159);*/
+}
+
+.updateStdTf{
+    -fx-border-color:  #FF5733;
+    -fx-border-radius: 5;
+    -fx-text-fill:  #FF5733;
+    -fx-prompt-text-fill: #FF5733;
+}
+.updateStdCombo {
+    -fx-background-color: #C70039;
+    -fx-border-color:  #FF5733;
+    -fx-border-radius: 5;
+    -fx-text-fill:  #FF5733;
+    -fx-prompt-text-fill: #FFf;
+}
+#UpdateBtn {
+    -fx-background-color: transfarent;
+    -fx-border-color:  #FF5733;
+    -fx-border-radius: 5;
+    -fx-text-fill:  #FF5733;
+}
+#UpdateBtn:hover {
+    -fx-background-color: #FF5733;
+    -fx-border-color:  #Fff;
+    -fx-border-radius: 5;
+    -fx-text-fill:  #FFff;
+}
+
+.prgUpdateBtn {
+    -fx-background-color: transfarent;
+    -fx-border-color:  #A59DD1;
+    -fx-border-radius: 5;
+    -fx-text-fill:  #C6C1E2;
+}
+.prgUpdateBtn:hover {
+    -fx-background-color: #273c75;
+    -fx-border-color: #273c75;
+}
+.prgDeleteBtn {
+    -fx-background-color: transfarent;
+    -fx-border-color:  #A59DD1;
+    -fx-border-radius: 5;
+    -fx-text-fill:  #C6C1E2;
+}
+.prgDeleteBtn:hover {
+    -fx-background-color: #c23616;
+    -fx-border-color:  #c23616;
+
+}
+.updateCourseBtn{
+    -fx-background-color: transfarent;
+    -fx-border-color: #eae807;
+    -fx-border-radius: 5;
+    -fx-text-fill: #eae807;
+}
+.updateCourseBtn:hover{
+    -fx-border-color: #3B3B98;
+    -fx-border-radius: 5;
+    -fx-text-fill: #3B3B98;
+}
+.deleteCourseBtn{
+    -fx-background-color: transfarent;
+    -fx-border-color: #eae807;
+    -fx-border-radius: 5;
+    -fx-text-fill: #eae807;
+}
+.deleteCourseBtn:hover{
+    -fx-border-color: #ea3c89;
+    -fx-border-radius: 5;
+    -fx-text-fill: #ea3c89;
+}
+.updateCourseTf{
+    -fx-background-color: transfarent;
+    -fx-border-color:#A4A305;
+    -fx-prompt-text-fill: #A4A305;
+    -fx-border-radius: 5;
+}

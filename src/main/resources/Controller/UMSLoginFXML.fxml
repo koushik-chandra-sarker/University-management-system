@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="loginPage" prefHeight="600.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UMSLoginFXMLController">
+    <children>
+        <BorderPane prefHeight="600.0" prefWidth="317.0">
+            <left>
+                <Pane prefHeight="600.0" prefWidth="429.0" style="-fx-background-color: #311b92;" BorderPane.alignment="CENTER">
+                    <children>
+                        <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="115.0" layoutY="107.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@image/icon/WSSU0.png" />
+                            </image>
+                        </ImageView>
+                        <Text fill="#ffd2d2" layoutX="27.0" layoutY="292.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Welcome to Southeast university" textAlignment="CENTER" wrappingWidth="375.9453125">
+                            <font>
+                                <Font name="Corbel" size="42.0" />
+                            </font>
+                        </Text>
+                        <HBox layoutX="21.0" layoutY="14.0" spacing="10.0">
+                            <children>
+                                <Circle fx:id="closeLoginPage" fill="#f35963" onMouseClicked="#MouseClickHandle" radius="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Circle>
+                                <Circle fill="#fffb00" layoutX="25.0" layoutY="25.0" radius="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Circle>
+                                <Circle fx:id="minimizeLoginPage" fill="#47d047" layoutX="55.0" layoutY="25.0" onMouseClicked="#MouseClickHandle" radius="10.0" stroke="WHITE" strokeType="INSIDE" strokeWidth="2.0">
+                                    <cursor>
+                                        <Cursor fx:constant="HAND" />
+                                    </cursor>
+                                </Circle>
+                            </children>
+                        </HBox>
+                    </children>
+                </Pane>
+            </left>
+            <right>
+                <Pane prefHeight="600.0" prefWidth="532.0" style="-fx-background-color: rgb(243, 89, 99);" BorderPane.alignment="CENTER">
+                    <children>
+                        <TextField fx:id="userNameField" layoutX="87.0" layoutY="190.0" prefHeight="60.0" prefWidth="390.0" promptText="Username" styleClass="tf-1" stylesheets="@css/UMSMain.css" />
+                        <PasswordField fx:id="passwordField" layoutX="87.0" layoutY="293.0" prefHeight="60.0" prefWidth="390.0" promptText="Password" styleClass="pf-1" stylesheets="@css/UMSMain.css" />
+                        <Button fx:id="loginBtn" layoutX="310.0" layoutY="390.0" mnemonicParsing="false" onAction="#loginControl" prefHeight="57.0" prefWidth="166.0" styleClass="button_1" stylesheets="@css/UMSMain.css" text="Login" />
+                    </children>
+                </Pane>
+            </right>
+        </BorderPane>
+    </children>
+</AnchorPane>

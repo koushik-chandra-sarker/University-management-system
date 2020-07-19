@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="connection.url">jdbc:mysql://127.0.0.1:3307/ums</property>
+        <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+        <property name="connection.username">root</property>
+        <property name="connection.password">0000</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.MySQL8Dialect</property>
+
+        <!-- DB schema will be updated if needed -->
+        <property name="show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <property name="hibernate.format_sql">true</property>
+
+        <mapping class="Bean.Campus"></mapping>
+        <mapping class="Bean.School"></mapping>
+        <mapping class="Bean.Programme"></mapping>
+        <mapping class="Bean.Student"></mapping>
+        <mapping class="Bean.Course"></mapping>
+        <mapping class="Bean.Course_Student"></mapping>
+        <mapping class="Bean.Lecturer"></mapping>
+        <mapping class="Bean.Lecturer_Course"></mapping>
+        <mapping class="Bean.Committee"></mapping>
+        <mapping class="Bean.Committee_Lecturer"></mapping>
+        <mapping class="Bean.User"></mapping>
+
+
+    </session-factory>
+</hibernate-configuration>

@@ -1,0 +1,859 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.UMSDeshboardFXMLController">
+   <children>
+      <AnchorPane maxWidth="-Infinity" prefHeight="768.0" prefWidth="236.0" style="-fx-background-color: #7f8fa6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane prefHeight="740.0" prefWidth="63.0" style="-fx-background-color: #7f8fa6;" AnchorPane.bottomAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fitHeight="63.0" fitWidth="63.0" layoutY="13.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+                     <image>
+                        <Image url="@image/icon/WSSU0.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label alignment="CENTER" contentDisplay="CENTER" graphicTextGap="10.0" layoutX="62.0" layoutY="13.0" lineSpacing="4.0" prefHeight="63.0" prefWidth="186.0" styleClass="uvName" stylesheets="@css/UMSMain.css" text="Southeast University" textAlignment="CENTER" AnchorPane.rightAnchor="-1.0">
+               <font>
+                  <Font name="Calibri" size="19.0" />
+               </font>
+            </Label>
+            <Line blendMode="MULTIPLY" endX="148.5" layoutX="93.0" layoutY="90.0" startX="-93.0" stroke="#e8dfdf" style="-fx-fill: white;" />
+            <VBox layoutX="1.0" layoutY="100.0" prefHeight="409.0" prefWidth="247.0">
+               <children>
+                  <Button fx:id="dashboardBtn" alignment="BASELINE_LEFT" graphicTextGap="69.0" mnemonicParsing="false" onAction="#pageControlAction" prefHeight="62.0" prefWidth="332.0" styleClass="button_2" stylesheets="@css/UMSMain.css" text="Dashboard" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView blendMode="MULTIPLY" fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/icons8_dashboard_100px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="btn_2" alignment="BASELINE_LEFT" graphicTextGap="69.0" mnemonicParsing="false" onAction="#pageControlAction" prefHeight="62.0" prefWidth="247.0" styleClass="button_2" stylesheets="@css/UMSMain.css" text="Campus" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView blendMode="MULTIPLY" fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/icons8_university_campus_60px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="StudentBtn" alignment="BASELINE_LEFT" graphicTextGap="69.0" mnemonicParsing="false" onAction="#pageControlAction" prefHeight="62.0" prefWidth="247.0" styleClass="button_2" stylesheets="@css/UMSMain.css" text="Student" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView blendMode="MULTIPLY" fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/icons8_student_male_240px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="courseBtn" alignment="BASELINE_LEFT" graphicTextGap="69.0" mnemonicParsing="false" onAction="#pageControlAction" prefHeight="62.0" prefWidth="247.0" styleClass="button_2" stylesheets="@css/UMSMain.css" text="Courses" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView blendMode="MULTIPLY" fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/icons8_course_60px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="lecturerBtn" alignment="BASELINE_LEFT" graphicTextGap="69.0" mnemonicParsing="false" onAction="#pageControlAction" prefHeight="62.0" prefWidth="247.0" styleClass="button_2" stylesheets="@css/UMSMain.css" text="Lecturer" textAlignment="RIGHT">
+                     <graphic>
+                        <ImageView blendMode="MULTIPLY" fitHeight="31.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/icons8_training_80px.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="247.0" prefHeight="768.0" prefWidth="1026.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="247.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <AnchorPane fx:id="page2" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7F8FA6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane blendMode="MULTIPLY" layoutX="53.0" layoutY="133.0" prefHeight="502.0" prefWidth="313.0" style="-fx-background-color: #fff; -fx-border-color: #F0F0F0;">
+                     <children>
+                        <Label alignment="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="50.0" prefWidth="360.0" text="Add Campus" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <TextField fx:id="campusNameField" onAction="#ButtonHandleAction" prefHeight="50.0" prefWidth="314.0" promptText="Campus Name" />
+                              <TextField fx:id="campusAddressField" layoutX="10.0" layoutY="10.0" onAction="#ButtonHandleAction" prefHeight="50.0" prefWidth="314.0" promptText="Address" />
+                              <AnchorPane prefHeight="40.0" prefWidth="292.0">
+                                 <children>
+                                    <Button fx:id="campusAddBtn" layoutX="96.0" layoutY="64.0" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="40.0" text="Add" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="0.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="studentPage" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7f8fa6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TableView fx:id="StudentTableView" blendMode="MULTIPLY" editable="true" layoutX="14.0" layoutY="140.0" prefHeight="648.0" prefWidth="618.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="394.6" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="150.0">
+                    <columns>
+                      <TableColumn fx:id="tbStudentId" prefWidth="89.59997713565826" text="Id" />
+                      <TableColumn fx:id="tbStudentName" prefWidth="161.59996795654297" text="Name" />
+                        <TableColumn fx:id="tbStudentBirthday" prefWidth="71.20001220703125" text="Birthday" />
+                        <TableColumn fx:id="tbStudentGender" prefWidth="56.0" text="Gender" />
+                        <TableColumn fx:id="tbStudentYearEnrolled" minWidth="0.0" prefWidth="130.39993286132812" text="YearEnrolled" />
+                        <TableColumn fx:id="tvStudentProgramme" minWidth="0.0" prefWidth="61.60009765625" text="Programme" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <Label layoutX="14.0" layoutY="14.0" prefHeight="60.0" prefWidth="154.0" text="Students" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="865.0">
+                     <font>
+                        <Font name="Calibri Bold" size="30.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane blendMode="MULTIPLY" layoutX="21.0" layoutY="100.0" prefHeight="648.0" prefWidth="360.0" style="-fx-border-color: #7F8FA6;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="150.0">
+                     <children>
+                        <VBox layoutX="11.0" layoutY="48.0" prefHeight="334.0" prefWidth="340.0" spacing="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+                           <children>
+                              <TextField fx:id="stdNameField" prefHeight="50.0" prefWidth="338.0" promptText="Name" />
+                              <TextField fx:id="stdEnrolledYear" layoutX="10.0" layoutY="62.0" prefHeight="50.0" prefWidth="338.0" promptText="Enrolled Year" />
+                              <AnchorPane prefHeight="182.0" prefWidth="340.0">
+                                 <children>
+                                    <DatePicker fx:id="stdBirthdayPicker" layoutX="49.0" layoutY="1.0" prefHeight="50.0" prefWidth="182.0" promptText="Birthday" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ComboBox fx:id="stdGenderCombo" layoutY="83.0" prefHeight="50.0" prefWidth="340.0" promptText="Gender" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
+                                    <ComboBox fx:id="stdPrgCombo" layoutX="6.0" layoutY="131.0" prefHeight="50.0" prefWidth="340.0" promptText="Programme" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <Button fx:id="stdAddBtn" layoutX="123.0" layoutY="447.0" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="40.0" prefWidth="150.0" text="Add" AnchorPane.leftAnchor="123.0" AnchorPane.rightAnchor="123.0" />
+                        <Label alignment="CENTER" blendMode="MULTIPLY" layoutX="16.0" layoutY="7.0" prefHeight="60.0" prefWidth="329.0" text="Add Student" AnchorPane.topAnchor="7.0">
+                           <font>
+                              <Font name="Calibri Bold" size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <HBox layoutX="844.0" layoutY="100.0" spacing="10.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button fx:id="StdCourseInfoBtn" blendMode="MULTIPLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ButtonHandleAction" text="Course info" />
+                        <Button fx:id="studentUpdateBtn" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#updateDeleteAction" text="Update" />
+                        <Button fx:id="StudentDeleteBtn" blendMode="MULTIPLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#updateDeleteAction" text="Delete" />
+                     </children>
+                  </HBox>
+                  <AnchorPane fx:id="stdCoursePage" disable="true" layoutX="46.0" layoutY="60.0" prefHeight="648.0" prefWidth="942.0" style="-fx-background-color: #7f8fa6;" visible="false">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <VBox layoutX="14.0" layoutY="25.0" prefHeight="157.0" prefWidth="402.0" spacing="5.0" style="-fx-border-color: #505A69;" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="25.0">
+                           <children>
+                              <HBox prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="ID: " />
+                                    <Label fx:id="stdCourseStdIdLabel" text="Student Id" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Name: " />
+                                    <Label fx:id="stdCourseStdNameLabel" text="Student Name" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="43.0" prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Programme: " />
+                                    <Label fx:id="stdCourseStdPrgLabel" layoutX="10.0" layoutY="10.0" text="Student Programe" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <ListView fx:id="stdCourseListView" blendMode="MULTIPLY" layoutX="14.0" layoutY="264.0" prefHeight="341.0" prefWidth="369.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" />
+                        <ListView fx:id="stdGivenCourseListView" blendMode="MULTIPLY" layoutX="486.0" layoutY="264.0" prefHeight="341.0" prefWidth="369.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+                        <VBox layoutX="426.0" layoutY="402.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="addStdCourseBtn" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="39.0" prefWidth="91.0" text="Add" />
+                              <Button fx:id="dropStudentCourseBtn" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="39.0" prefWidth="91.0" text="Drop" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="118.0" layoutY="253.0" text="List of Course">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="678.0" layoutY="253.0" text="Given Course">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="closeStdCoursePage" blendMode="MULTIPLY" fitHeight="30.0" fitWidth="30.0" layoutX="898.0" layoutY="14.0" onMouseClicked="#MouseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@image/icon/addLecCancel.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <VBox layoutX="517.0" layoutY="25.0" prefHeight="219.0" prefWidth="338.0" spacing="20.0">
+                           <children>
+                              <ComboBox fx:id="stdSemesterCombo" blendMode="MULTIPLY" prefHeight="39.0" prefWidth="351.0" promptText="Semester" />
+                              <ComboBox fx:id="stdSemesterYearCombo" blendMode="MULTIPLY" layoutX="10.0" layoutY="10.0" prefHeight="39.0" prefWidth="351.0" promptText="Semester year" />
+                              <TextField fx:id="stdGradeAwardField" blendMode="MULTIPLY" promptText="Grade(if awarded)" />
+                              <Pane>
+                                 <children>
+                                    <Button fx:id="updateStdGradeBtn" alignment="CENTER" blendMode="MULTIPLY" layoutX="203.0" layoutY="1.0" mnemonicParsing="false" onAction="#ButtonHandleAction" text="Update Grade" />
+                                 </children>
+                              </Pane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="updateStdPage" disable="true" layoutX="344.0" layoutY="63.0" prefHeight="611.0" prefWidth="360.0" style="-fx-background-color: #7f8fa6;" visible="false">
+                     <children>
+                        <VBox layoutX="11.0" layoutY="48.0" prefHeight="403.0" prefWidth="340.0" spacing="20.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+                           <children>
+                              <TextField fx:id="stdUpdateIdField" blendMode="MULTIPLY" prefHeight="50.0" prefWidth="338.0" promptText="Name" style="-fx-background-color: tranfarent; -fx-border-color: #FF5733;" styleClass="updateStdTf" stylesheets="@css/UMSMain.css" text="Id" />
+                              <TextField fx:id="stdUpdateNameField" blendMode="MULTIPLY" prefHeight="50.0" prefWidth="338.0" promptText="Name" style="-fx-background-color: tranfarent; -fx-border-color: #FF5733;" styleClass="updateStdTf" stylesheets="@css/UMSMain.css" />
+                              <TextField fx:id="stdUpdateEnrolledYearField" blendMode="MULTIPLY" layoutX="10.0" layoutY="62.0" prefHeight="50.0" prefWidth="338.0" promptText="Enrolled Year" style="-fx-background-color: tranfarent; -fx-border-color: #FF5733;" styleClass="updateStdTf" stylesheets="@css/UMSMain.css" />
+                              <AnchorPane prefHeight="148.0" prefWidth="340.0">
+                                 <children>
+                                    <ComboBox fx:id="stdUpdateGenderCombo" blendMode="MULTIPLY" layoutY="62.0" prefHeight="50.0" prefWidth="340.0" promptText="Gender" stylesheets="@css/UMSMain.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <ComboBox fx:id="stdUpdatePrgCombo" blendMode="MULTIPLY" layoutX="6.0" layoutY="131.0" prefHeight="50.0" prefWidth="340.0" promptText="Programme" stylesheets="@css/UMSMain.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0" />
+                                    <DatePicker fx:id="stdUpdateBirthdayPicker" blendMode="MULTIPLY" layoutY="117.0" prefHeight="50.0" prefWidth="182.0" promptText="Birthday" showWeekNumbers="true" stylesheets="@css/UMSMain.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="140.0">
+                                       <effect>
+                                          <ColorAdjust brightness="-0.69" contrast="1.0" hue="1.0" />
+                                       </effect>
+                                    </DatePicker>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <Button fx:id="stdUpdateActionBtn" blendMode="MULTIPLY" layoutX="100.0" layoutY="520.0" mnemonicParsing="false" onAction="#updateDeleteAction" prefHeight="40.0" prefWidth="150.0" stylesheets="@css/UMSMain.css" text="Update" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" />
+                        <HBox layoutX="326.0" layoutY="14.0" spacing="5.0">
+                           <children>
+                              <ImageView fx:id="closeUpdateStd" fitHeight="18.0" fitWidth="18.0" onMouseClicked="#MouseClicked" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icon/icons8_delete_48px.png" />
+                                 </image>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <Label alignment="CENTER" blendMode="MULTIPLY" layoutX="75.0" layoutY="23.0" prefHeight="58.0" prefWidth="209.0" style="-fx-border-color: #FF5733; -fx-border-radius: 5;" text="Update Student" textFill="#ff5733">
+                           <font>
+                              <Font size="26.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="coursePage" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7F8FA6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <AnchorPane blendMode="MULTIPLY" layoutX="53.0" layoutY="133.0" prefHeight="502.0" prefWidth="313.0" style="-fx-background-color: #fff; -fx-border-color: #F0F0F0;" AnchorPane.topAnchor="150.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="50.0" prefWidth="360.0" text="Add Course" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <TextField fx:id="courseCodeField" prefHeight="50.0" prefWidth="314.0" promptText="Course code" />
+                              <TextField fx:id="courseTitleField" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="314.0" promptText="Course title" />
+                              <AnchorPane prefHeight="123.0" prefWidth="292.0">
+                                 <children>
+                                    <ComboBox fx:id="courseCombo" layoutX="14.0" layoutY="12.0" prefHeight="50.0" prefWidth="150.0" promptText="--Select Programme--" style="-fx-background-color: #Fff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <effect>
+                                          <InnerShadow height="4.3" radius="1.5750000000000002" width="4.0" />
+                                       </effect>
+                                    </ComboBox>
+                                    <Button fx:id="courseAddBtn" layoutX="96.0" layoutY="64.0" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="40.0" text="Add" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="70.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="383.0" layoutY="201.0" prefHeight="502.0" prefWidth="630.0" AnchorPane.leftAnchor="383.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="150.0">
+                     <children>
+                        <TableView fx:id="courseTableView" blendMode="MULTIPLY" editable="true" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn fx:id="tbCourseCode" prefWidth="139.20001220703125" text="Course code" />
+                            <TableColumn fx:id="tbCourseTitle" prefWidth="361.60003662109375" text="Course title" />
+                              <TableColumn fx:id="tbCourseProgramme" prefWidth="160.7999267578125" text="Programme" />
+                          </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+                  <Label alignment="CENTER" layoutX="500.0" layoutY="40.0" text="Course Details" AnchorPane.leftAnchor="400.0" AnchorPane.rightAnchor="400.0">
+                     <font>
+                        <Font name="Calibri" size="30.0" />
+                     </font>
+                  </Label>
+                  <HBox layoutX="856.0" layoutY="101.0" spacing="10.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button fx:id="courseUpdateBtn" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#updateDeleteAction" stylesheets="@css/UMSMain.css" text="Update" />
+                        <Button fx:id="courseDeleteBtn" blendMode="MULTIPLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#updateDeleteAction" stylesheets="@css/UMSMain.css" text="Delete" />
+                     </children>
+                  </HBox>
+                  <AnchorPane fx:id="updateCoursePage" layoutX="346.0" layoutY="122.0" prefHeight="502.0" prefWidth="313.0" style="-fx-background-color: #7F8FA6;" visible="false" AnchorPane.bottomAnchor="125.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="125.0">
+                     <children>
+                        <ImageView fx:id="closeUpdateCourseBtn" fitHeight="40.0" fitWidth="40.0" layoutX="382.0" layoutY="14.0" onMouseClicked="#MouseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@image/icon/addLecCancel.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label alignment="CENTER" blendMode="MULTIPLY" layoutX="43.0" prefHeight="85.0" prefWidth="342.0" text="Update Course" textFill="#8d8d87" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Calibri" size="30.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="100.0">
+                           <children>
+                              <TextField fx:id="updateCourseCodeField" blendMode="MULTIPLY" prefHeight="50.0" prefWidth="314.0" promptText="Course code" stylesheets="@css/UMSMain.css">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TextField>
+                              <TextField fx:id="updateCourseTitleField" blendMode="MULTIPLY" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="314.0" promptText="Course title" stylesheets="@css/UMSMain.css">
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                              </TextField>
+                              <AnchorPane prefHeight="123.0" prefWidth="292.0">
+                                 <children>
+                                    <ComboBox fx:id="updateCourseCombo" blendMode="MULTIPLY" layoutX="14.0" layoutY="12.0" prefHeight="50.0" prefWidth="150.0" promptText="--Select Programme--" styleClass="updateCourseTf" stylesheets="@css/UMSMain.css" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                                    <Button fx:id="courseUpdateActionBtn" blendMode="MULTIPLY" layoutX="100.0" layoutY="85.0" mnemonicParsing="false" onAction="#updateDeleteAction" prefHeight="40.0" styleClass="updateCourseBtn" stylesheets="@css/UMSMain.css" text="Update" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="85.0">
+                                       <effect>
+                                          <InnerShadow height="4.5" radius="1.75" width="4.5" />
+                                       </effect>
+                                    </Button>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                     </children>
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="lecturerPage" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7f8fa6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <TableView fx:id="lecTableView" blendMode="MULTIPLY" editable="true" layoutX="7.0" layoutY="164.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="150.0">
+                    <columns>
+                      <TableColumn fx:id="tbLecId" prefWidth="205.0" text="Id" />
+                      <TableColumn fx:id="tbLecName" prefWidth="129.0" text="Name" />
+                        <TableColumn fx:id="tbLecTitle" prefWidth="75.0" text="Title" />
+                        <TableColumn fx:id="tbLecOffice" prefWidth="75.0" text="Office Room" />
+                        <TableColumn fx:id="tbLecSchool" prefWidth="75.0" text="School" />
+                        <TableColumn fx:id="tbLecSupervisor" prefWidth="75.0" text="Supervisor" />
+                    </columns>
+                     <columnResizePolicy>
+                        <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                     </columnResizePolicy>
+                  </TableView>
+                  <HBox layoutX="557.0" layoutY="95.0" spacing="10.0" AnchorPane.rightAnchor="20.0">
+                     <children>
+                        <Button fx:id="lecAddBtn" blendMode="MULTIPLY" mnemonicParsing="false" onMouseClicked="#MouseClicked" prefHeight="39.0" prefWidth="164.0" text="Add Lecturer" />
+                        <Button fx:id="lecCourseInfo" blendMode="MULTIPLY" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="39.0" prefWidth="136.0" text="Course info" />
+                        <Button fx:id="updateLecBtn" blendMode="MULTIPLY" layoutX="110.0" layoutY="10.0" mnemonicParsing="false" onAction="#updateDeleteAction" prefHeight="39.0" prefWidth="116.0" text="Update" />
+                        <Button fx:id="deleteLecBtn" blendMode="MULTIPLY" layoutX="233.0" layoutY="10.0" mnemonicParsing="false" onAction="#updateDeleteAction" prefHeight="39.0" prefWidth="116.0" text="Delete" />
+                     </children>
+                  </HBox>
+                  <Label blendMode="MULTIPLY" layoutX="20.0" layoutY="-2.0" prefHeight="70.0" prefWidth="214.0" text="Lecturer">
+                     <font>
+                        <Font name="Calibri" size="40.0" />
+                     </font>
+                  </Label>
+                  <AnchorPane fx:id="AddLecPage" disable="true" layoutX="300.0" layoutY="115.0" maxWidth="-Infinity" prefHeight="568.0" prefWidth="442.0" style="-fx-background-color: #7f8fa6;" visible="false" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="115.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fx:id="closeAddLecPage" blendMode="MULTIPLY" fitHeight="30.0" fitWidth="30.0" layoutX="398.0" layoutY="18.0" onMouseClicked="#MouseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@image/icon/addLecCancel.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label alignment="CENTER" blendMode="MULTIPLY" layoutX="250.0" layoutY="14.0" text="Add Lecturer" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0">
+                           <font>
+                              <Font name="Calibri" size="30.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="162.0" layoutY="91.0" prefHeight="471.0" prefWidth="402.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="80.0">
+                           <children>
+                              <TextField fx:id="lecNameField" blendMode="MULTIPLY" prefHeight="50.0" promptText="Name">
+                                 <effect>
+                                    <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="lecTitleField" blendMode="MULTIPLY" layoutX="10.0" layoutY="10.0" prefHeight="50.0" promptText="Title">
+                                 <effect>
+                                    <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="lecOfficeRoomField" blendMode="MULTIPLY" layoutX="10.0" layoutY="80.0" prefHeight="50.0" promptText="Office Room">
+                                 <effect>
+                                    <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </TextField>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ComboBox fx:id="lecSupCombo" blendMode="MULTIPLY" layoutX="103.0" layoutY="21.0" prefHeight="50.0" prefWidth="150.0" promptText="Supervisor id" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <effect>
+                                          <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                       </effect>
+                                    </ComboBox>
+                                    <ComboBox fx:id="lecSclCombo" blendMode="MULTIPLY" layoutY="63.0" prefHeight="50.0" prefWidth="150.0" promptText="School" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+                                       <effect>
+                                          <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                       </effect>
+                                    </ComboBox>
+                                    <Button fx:id="lecAddActionBtn" alignment="CENTER" blendMode="MULTIPLY" layoutX="112.0" layoutY="147.0" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="50.0" style="-fx-background-radius: 40;" text="Add" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="updateLecPage" disable="true" layoutX="300.0" layoutY="75.0" maxWidth="-Infinity" prefHeight="619.0" prefWidth="442.0" style="-fx-background-color: #30336b;" visible="false">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fx:id="closeUpdateLecPage" blendMode="MULTIPLY" fitHeight="30.0" fitWidth="30.0" layoutX="398.0" layoutY="18.0" onMouseClicked="#MouseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@image/icon/addLecCancel.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <Label alignment="CENTER" blendMode="MULTIPLY" layoutX="250.0" layoutY="14.0" text="Update Lecturer" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="15.0">
+                           <font>
+                              <Font name="Calibri" size="30.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="162.0" layoutY="91.0" prefHeight="471.0" prefWidth="402.0" spacing="20.0" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="100.0">
+                           <children>
+                              <TextField fx:id="updateIdField" blendMode="MULTIPLY" editable="false" prefHeight="50.0" prefWidth="370.0" promptText="Id">
+                                 <effect>
+                                    <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="updateLecNameField" blendMode="MULTIPLY" prefHeight="50.0" promptText="Name">
+                                 <effect>
+                                    <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="updateLecTitleField" blendMode="MULTIPLY" layoutX="10.0" layoutY="10.0" prefHeight="50.0" promptText="Title">
+                                 <effect>
+                                    <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </TextField>
+                              <TextField fx:id="updateLecOfficeRoomField" blendMode="MULTIPLY" layoutX="10.0" layoutY="80.0" prefHeight="50.0" promptText="Office Room">
+                                 <effect>
+                                    <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                 </effect>
+                              </TextField>
+                              <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                                 <children>
+                                    <ComboBox fx:id="updateLecSupCombo" blendMode="MULTIPLY" layoutX="103.0" layoutY="21.0" prefHeight="50.0" prefWidth="150.0" promptText="Supervisor id" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <effect>
+                                          <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                       </effect>
+                                    </ComboBox>
+                                    <ComboBox fx:id="updateLecSclCombo" blendMode="MULTIPLY" layoutY="63.0" prefHeight="50.0" prefWidth="150.0" promptText="School" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="70.0">
+                                       <effect>
+                                          <InnerShadow height="5.0" radius="2.0" width="5.0" />
+                                       </effect>
+                                    </ComboBox>
+                                    <Button fx:id="updateLecActionBtn" alignment="CENTER" blendMode="MULTIPLY" layoutX="138.0" layoutY="150.0" mnemonicParsing="false" onAction="#updateDeleteAction" prefHeight="50.0" style="-fx-background-radius: 40;" text="Update" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="150.0" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                        </VBox>
+                        <Label blendMode="MULTIPLY" layoutX="20.0" layoutY="70.0" prefHeight="27.0" prefWidth="235.0" text="N.B: You can't update Id." AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="70.0" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="lecCoursePage" disable="true" layoutX="52.0" layoutY="64.0" prefHeight="648.0" prefWidth="942.0" style="-fx-background-color: #7f8fa6;" visible="false">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <VBox layoutX="296.0" layoutY="14.0" prefHeight="217.0" prefWidth="442.0" spacing="5.0" style="-fx-border-color: #505A69;" AnchorPane.leftAnchor="296.0" AnchorPane.topAnchor="10.0">
+                           <children>
+                              <HBox prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="ID: " />
+                                    <Label fx:id="lecCourseLecIdLabel" text="Lecturer Id" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="10.0" prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Name: " />
+                                    <Label fx:id="lecCourseLecNameLabel" text="Lecturer Name" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="43.0" prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Title: " />
+                                    <Label fx:id="lecCourseLecTitleLabel" layoutX="10.0" layoutY="10.0" text="Lecturer title" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="76.0" prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Office: " />
+                                    <Label fx:id="lecCourseLecOfficeLabel" layoutX="10.0" layoutY="10.0" text="Lecturer Office room" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="10.0" layoutY="109.0" prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="School: " />
+                                    <Label fx:id="lecCourseLecSchoolLabel" layoutX="10.0" layoutY="10.0" text="Lecturer school" />
+                                 </children>
+                              </HBox>
+                              <HBox layoutX="31.0" layoutY="179.0" prefHeight="33.0" prefWidth="100.0" spacing="5.0">
+                                 <children>
+                                    <Label text="Supervisor: " />
+                                    <Label fx:id="lecCourseLecSupLabel" layoutX="10.0" layoutY="10.0" text="Supervisor name" />
+                                 </children>
+                              </HBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+                           </padding>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                        </VBox>
+                        <ListView fx:id="lecCourseListView" blendMode="MULTIPLY" layoutX="14.0" layoutY="264.0" prefHeight="341.0" prefWidth="369.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0">
+                           <effect>
+                              <DropShadow />
+                           </effect></ListView>
+                        <ListView fx:id="lecGivenCourseListView" blendMode="MULTIPLY" layoutX="486.0" layoutY="264.0" prefHeight="341.0" prefWidth="369.0" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                           <effect>
+                              <DropShadow />
+                           </effect></ListView>
+                        <VBox layoutX="426.0" layoutY="402.0" spacing="20.0">
+                           <children>
+                              <Button fx:id="addLecCourse" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="39.0" prefWidth="91.0" text="Add" />
+                              <Button fx:id="dropLecCourse" blendMode="MULTIPLY" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="39.0" prefWidth="91.0" text="Drop" />
+                           </children>
+                        </VBox>
+                        <Label layoutX="118.0" layoutY="253.0" text="List of Course">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="678.0" layoutY="253.0" text="Given Course">
+                           <font>
+                              <Font name="Calibri" size="24.0" />
+                           </font>
+                        </Label>
+                        <ImageView fx:id="closeLecCoursePage" blendMode="MULTIPLY" fitHeight="30.0" fitWidth="30.0" layoutX="898.0" layoutY="14.0" onMouseClicked="#MouseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                           <image>
+                              <Image url="@image/icon/addLecCancel.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="dashboardPage" style="-fx-background-color: #7f8fa6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <Label layoutX="20.0" layoutY="22.0" text="Dashboard">
+                     <font>
+                        <Font name="Calibri" size="30.0" />
+                     </font>
+                  </Label>
+                  <GridPane hgap="20.0" layoutY="70.0" prefHeight="150.0" prefWidth="993.0" AnchorPane.leftAnchor="20.0" AnchorPane.rightAnchor="20.0">
+                    <columnConstraints>
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #52DFC3;">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="13.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icon/icons8-user-account-100.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="90.0" layoutY="48.0" text="Total Student" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="133.0" layoutY="85.0" text="250" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #FFC878;" GridPane.columnIndex="1">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="23.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icon/icons8-user-account-100.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="100.0" layoutY="46.0" text="New Student" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="143.0" layoutY="83.0" text="80" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #59A6FF;" GridPane.columnIndex="2">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="24.0" layoutY="45.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icon/Course.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="101.0" layoutY="49.0" text="Total Course" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="144.0" layoutY="86.0" text="50" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                        <Pane prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: FF6E86;" GridPane.columnIndex="3">
+                           <children>
+                              <ImageView fitHeight="60.0" fitWidth="60.0" layoutX="22.0" layoutY="44.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@image/icon/icons8-user-account-100.png" />
+                                 </image>
+                              </ImageView>
+                              <Label layoutX="99.0" layoutY="48.0" text="New Student" textFill="WHITE">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="142.0" layoutY="85.0" text="250" textFill="WHITE" />
+                           </children>
+                        </Pane>
+                     </children>
+                  </GridPane>
+                  <AnchorPane layoutX="371.0" layoutY="247.0" prefHeight="502.0" prefWidth="360.0" style="-fx-border-color: #738196;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="662.0" AnchorPane.rightAnchor="20.0" AnchorPane.topAnchor="245.60000000000002">
+                     <children>
+                        <ListView fx:id="sclListView" blendMode="MULTIPLY" layoutY="70.0" prefHeight="450.0" prefWidth="378.0" style="-fx-border-color: #F0F0F0;" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0" />
+                        <Label alignment="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="50.0" prefWidth="360.0" text="School List" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane blendMode="MULTIPLY" layoutX="20.0" layoutY="245.0" prefHeight="502.0" prefWidth="313.0" style="-fx-background-color: #fff; -fx-border-color: #F0F0F0;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="245.0">
+                     <children>
+                        <Label alignment="CENTER" blendMode="MULTIPLY" layoutX="166.0" layoutY="14.0" prefHeight="50.0" prefWidth="360.0" text="Add School" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox blendMode="MULTIPLY" layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <TextField fx:id="sclNameFIeld" prefHeight="50.0" prefWidth="314.0" promptText="School Name" />
+                              <TextField fx:id="sclBuildingField" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="314.0" promptText="Building" />
+                              <AnchorPane prefHeight="112.0" prefWidth="292.0">
+                                 <children>
+                                    <Button fx:id="sclAddBtn" layoutX="96.0" layoutY="64.0" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="40.0" text="Add" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="70.0" />
+                                    <ComboBox fx:id="sclcombo" layoutX="32.0" layoutY="-2.0" prefHeight="50.0" prefWidth="150.0" promptText="--Select Campus--" style="-fx-background-color: #fff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <effect>
+                                          <InnerShadow blurType="TWO_PASS_BOX" height="4.15" radius="1.5375" width="4.0" />
+                                       </effect></ComboBox>
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane blendMode="MULTIPLY" layoutX="344.0" layoutY="245.0" prefHeight="502.0" prefWidth="298.0" style="-fx-background-color: #fff; -fx-border-color: #F0F0F0;" AnchorPane.bottomAnchor="20.0" AnchorPane.leftAnchor="344.0" AnchorPane.topAnchor="246.0">
+                     <children>
+                        <Label alignment="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="50.0" prefWidth="360.0" text="Add Programme" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <font>
+                              <Font name="Calibri" size="20.0" />
+                           </font>
+                        </Label>
+                        <VBox layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" spacing="10.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                           <children>
+                              <TextField fx:id="progCodeField" prefHeight="50.0" prefWidth="314.0" promptText="Programme Code" />
+                              <TextField fx:id="progTitleField" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="314.0" promptText="TItle" />
+                              <TextField fx:id="progLabelField" layoutX="10.0" layoutY="91.0" prefHeight="50.0" prefWidth="314.0" promptText="Label" />
+                              <TextField fx:id="progLengthField" layoutX="10.0" layoutY="152.0" prefHeight="50.0" prefWidth="314.0" promptText="Length (Year)" />
+                              <AnchorPane prefHeight="190.0" prefWidth="277.0">
+                                 <children>
+                                    <ComboBox fx:id="progCombo" layoutX="14.0" layoutY="12.0" prefHeight="50.0" prefWidth="150.0" promptText="--Select School--" style="-fx-background-color: #Fff;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                       <effect>
+                                          <InnerShadow height="4.3" radius="1.5750000000000002" width="4.0" />
+                                       </effect>
+                                    </ComboBox>
+                                    <Button fx:id="progAddBtn" layoutX="96.0" layoutY="64.0" mnemonicParsing="false" onAction="#ButtonHandleAction" prefHeight="40.0" text="Add" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="70.0" />
+                                    <Button fx:id="seePrgListBtn" layoutX="106.0" layoutY="136.0" mnemonicParsing="false" onAction="#ButtonHandleAction" text="See Programme List" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="138.4" />
+                                 </children>
+                              </AnchorPane>
+                           </children>
+                           <opaqueInsets>
+                              <Insets />
+                           </opaqueInsets>
+                           <padding>
+                              <Insets top="20.0" />
+                           </padding>
+                        </VBox>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane fx:id="programmeListPage" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #7f8fa6;" visible="false" AnchorPane.bottomAnchor="100.0" AnchorPane.leftAnchor="50.0" AnchorPane.rightAnchor="50.0" AnchorPane.topAnchor="100.0">
+                     <effect>
+                        <DropShadow />
+                     </effect>
+                     <children>
+                        <ImageView fx:id="PrgBack" blendMode="MULTIPLY" fitHeight="50.0" fitWidth="50.0" layoutX="14.0" layoutY="15.0" onMouseClicked="#MouseClicked" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@image/icon/icons8_cancel_60px.png" />
+                           </image>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor>
+                        </ImageView>
+                        <TableView fx:id="prgTableView" blendMode="MULTIPLY" editable="true" layoutX="221.0" layoutY="29.0" prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="80.0">
+                           <columns>
+                              <TableColumn fx:id="tbPrgCode" prefWidth="152.0" text="Programme Code" />
+                              <TableColumn fx:id="tbPrgTitle" minWidth="0.0" prefWidth="252.0" text="Title" />
+                              <TableColumn fx:id="tbPrgLabel" prefWidth="110.0" text=" Label" />
+                              <TableColumn fx:id="tbPrgLength" prefWidth="78.0" text="Length" />
+                              <TableColumn fx:id="tbPrgSclName" prefWidth="229.0" text="School" />
+                           </columns>
+                           <columnResizePolicy>
+                              <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+                           </columnResizePolicy>
+                        </TableView>
+                        <Label alignment="CENTER" layoutX="361.0" layoutY="14.0" prefHeight="52.0" prefWidth="221.0" text="Programme List" AnchorPane.leftAnchor="361.0" AnchorPane.rightAnchor="360.0">
+                           <font>
+                              <Font name="Calibri" size="26.0" />
+                           </font>
+                        </Label>
+                        <HBox layoutX="766.0" layoutY="27.0" spacing="10.0" AnchorPane.rightAnchor="10.0">
+                           <children>
+                              <Button fx:id="prgUpdateBtn" mnemonicParsing="false" onAction="#updateDeleteAction" styleClass="prgUpdateBtn" stylesheets="@css/UMSMain.css" text="Update" />
+                              <Button fx:id="prgDeleteBtn" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#updateDeleteAction" styleClass="prgDeleteBtn" stylesheets="@css/UMSMain.css" text="Delete" />
+                           </children>
+                        </HBox>
+                        <AnchorPane fx:id="updatePrgPage" prefHeight="502.0" prefWidth="298.0" style="-fx-background-color: #7f8fa6;" visible="false" AnchorPane.bottomAnchor="30.0" AnchorPane.leftAnchor="300.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="30.0">
+                           <children>
+                              <Label alignment="CENTER" layoutX="166.0" layoutY="14.0" prefHeight="50.0" prefWidth="360.0" text="Update Programme" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                 <font>
+                                    <Font name="Calibri" size="20.0" />
+                                 </font>
+                              </Label>
+                              <ImageView fx:id="updatePrgClose" blendMode="MULTIPLY" fitHeight="30.0" fitWidth="30.0" layoutX="301.0" layoutY="11.0" onMouseClicked="#MouseClicked" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0">
+                                 <image>
+                                    <Image url="@image/icon/icons8_cancel_60px.png" />
+                                 </image>
+                              </ImageView>
+                              <VBox layoutX="14.0" layoutY="50.0" prefHeight="200.0" prefWidth="100.0" spacing="20.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="50.0">
+                                 <children>
+                                    <TextField fx:id="updatePrgCodeField" accessibleRole="BUTTON" editable="false" onMouseClicked="#MouseClicked" prefHeight="50.0" prefWidth="314.0" promptText="Programme Code" style="-fx-background-color: tranfarent; -fx-border-color: #40739e;" />
+                                    <TextField fx:id="updatePrgTitleField" layoutX="10.0" layoutY="10.0" prefHeight="50.0" prefWidth="314.0" promptText="TItle" style="-fx-background-color: tranfarent; -fx-border-color: #40739e;" />
+                                    <TextField fx:id="updatePrgLabelField" layoutX="10.0" layoutY="91.0" prefHeight="50.0" prefWidth="314.0" promptText="Label" style="-fx-background-color: tranfarent; -fx-border-color: #40739e;" />
+                                    <TextField fx:id="updatePrgLengthField" layoutX="10.0" layoutY="152.0" prefHeight="50.0" prefWidth="314.0" promptText="Length (Year)" style="-fx-background-color: transfarent; -fx-border-color: #40739e;" />
+                                    <AnchorPane prefHeight="157.0" prefWidth="320.0">
+                                       <children>
+                                          <ComboBox fx:id="updatePrgCombo" layoutX="14.0" layoutY="12.0" prefHeight="50.0" prefWidth="150.0" promptText="--Select School--" style="-fx-background-color: transfarent; -fx-border-color: #40739e;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                             <effect>
+                                                <InnerShadow height="4.3" radius="1.5750000000000002" width="4.0" />
+                                             </effect>
+                                          </ComboBox>
+                                          <Button fx:id="prgUpdateActionBtn" layoutX="96.0" layoutY="64.0" mnemonicParsing="false" onAction="#updateDeleteAction" prefHeight="40.0" styleClass="prgUpdateBtn" stylesheets="@css/UMSMain.css" text="Update" AnchorPane.leftAnchor="100.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="80.0" />
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                                 <opaqueInsets>
+                                    <Insets />
+                                 </opaqueInsets>
+                                 <padding>
+                                    <Insets top="20.0" />
+                                 </padding>
+                              </VBox>
+                           </children>
+                           <effect>
+                              <DropShadow />
+                           </effect>
+                        </AnchorPane>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow height="4.0" radius="1.625" width="4.5" />
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>
